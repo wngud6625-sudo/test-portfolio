@@ -13,7 +13,16 @@ a {
     text-decoration: none;
 }
 .member1 {
+    background-color: #b8e2f3;
+}
+.member2 {
     background-color: #edffeb;
+}
+.member3 {
+    background-color: #f0cbf5;
+}
+.member4{
+    background-color: #caabec;
 }
 /* 전체 레이아웃 */
 section {
@@ -52,7 +61,7 @@ section {
     display: block;
     transition: all 0.3s;
 }
-.profile-img:hover img{
+.profile-img:hover img {
     transform: scale(1.1);
     filter: blur(2px);
     cursor: pointer;
@@ -72,8 +81,21 @@ section {
     padding: 8px 20px;
     color: #fff;
     border-radius: 24px;
-    background: linear-gradient(45deg, #10fcf0, #7502fc);
+    background: linear-gradient(45deg, #7502fc, #10fcf0);
     box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+/* member2 더보기 */
+.member2 .btn-view {
+    background: linear-gradient(45deg, #67eba9, #e2f154);
+    box-shadow: 5px 5px 20px rgba(0, 255, 106, 0.5);
+}
+.member3 .btn-view {
+    background: linear-gradient(45deg, #eb13b5, #ecb2b7);
+    box-shadow: 5px 5px 20px rgba(212, 0, 255, 0.5);
+}
+.member4 .btn-view{
+    background: linear-gradient(45deg, #644af8, #e288ee);
+    box-shadow: 5px 5px 20px rgba(212, 0, 255, 0.5);
 }
 /* 연락처 영역 */
 .link-contact {
