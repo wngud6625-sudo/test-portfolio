@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.member1 {
+    background-color: #edffeb;
+}
+/* 전체 레이아웃 */
+section {
+    width: 390px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+}
+/* 메뉴 */
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    color: #aaa;
+    font-size: 20px;
+}
+/* 프로필 영역 */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+    text-align: center;
+}
+/* 이미지 */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-img img {
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+.profile-img:hover img{
+    transform: scale(1.1);
+    filter: blur(2px);
+    cursor: pointer;
+}
+/* 이름 */
+.profile-name h1 {
+    font-size: 22px;
+    color: #555;
+    text-transform: uppercase;
+}
+.profile-name p {
+    font-size: 12px;
+    color: #939393;
+}
+/* 더보기 */
+.btn-view {
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 24px;
+    background: linear-gradient(45deg, #10fcf0, #7502fc);
+    box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+/* 연락처 영역 */
+.link-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.contact li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d2d1d1;
+}
+.contact li:last-child {
+    border: none;
+}
+.contact li i {
+    font-size: 14px;
+    color: #666;
+    text-shadow: 2px 2px 2px #ddd;
+}
+.contact li span {
+    font-family: "Orbitron", sans-serif;
+    color: #777;
+    font-size: 12px;
+}
+/* 멤버별 프로필 링크 */
+.others {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.others a {
+    /* display: block; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #df5959;
+    opacity: 0.4;
+    filter: saturate(0.7);
+}
+.others a:nth-of-type(1) {
+    background-color: #35e0f7;
+}
+.others a:nth-of-type(2) {
+    background-color: #55f5cd;
+}
+.others a:nth-of-type(3) {
+    background-color: #ff80df;
+}
+.others a:nth-of-type(4) {
+    background-color: #a794fd;
+}
+.others a.on {
+    opacity: 1;
+    filter: saturate(1);
+}
